@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #000;
+	width: 100%;
+}
+
+.container{
+	padding: 10px;
+	color: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35vh;
+	font-family: "Madimi One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 5rem;
+}
+
+.container span{
+	animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow{
+	0%, 100%{
+		color: #fff;
+		text-shadow: 0 0 12px limegreen, 0 0 50px limegreen, 0 0 100px limegreen;
+	}	
+
+	10%, 90%{
+		color: aqua;
+		text-shadow: none;
+	}
+}
+
+.container span:nth-child(2){
+	animation-delay: 0.25s;
+}
+
+.container span:nth-child(3){
+	animation-delay: 0.5s;
+}
+
+.container span:nth-child(4){
+	animation-delay: 0.75s;
+}
+
+.container span:nth-child(5){
+	animation-delay: 1s;
+}
+
+.container span:nth-child(6){
+	animation-delay: 1.25s;
+}
+
+.container span:nth-child(7){
+	animation-delay: 1.5s;
+}
+
+header{
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 25px;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	color: #696969;
+	margin: 0 30px;
+	padding: 5px 15px;
+	border-radius: 30px;
+}
+nav a:hover {
+	background-color: #000;
+	color: #fff;
+}
+.encabezado-img{
+	background-image: url(imagenes/fodo\ cabecera.png);
+	background-size: cover;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+.encabezado-img p{
+	font-size: 18px;
+}
+.encabezado-img h1{
+	font-size: 50px;
+}
+
+.vistazo{
+	text-align: center;
+	font-family: "Delicious Handrawn", cursive;
+	color: #fff;
+    padding: 20px;
+}
+
+.vistazo h1{
+	font-size: 35;
+}
+.vistazo p{
+	font-size: 27px;
+}
+
+
+.informacion{
+	text-align: center;
+	font-family: "Delicious Handrawn", cursive;
+	color: #fff;
+    padding: 20px;
+}
+
+.informacion h1{
+    font-size: 35px;
+	padding: 20px;
+}
+
+.informacion p{
+    font-size: 23px;
+	padding: 20px;
+}
+
+.contenedor{
+	display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    font-family: "Delicious Handrawn", cursive;
+    font-weight: 400;
+    font-style: normal;
+	color: #fff;
+	padding: 10px;
+}
+
+#nosotros {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+	padding: 30px;
+}
+
+#nosotros iframe{
+    padding: 10px;
+    margin: 10px;
+}
+
